@@ -24,8 +24,8 @@ Project based on 3-layer architecture:
  * Use taxi_service:war exploded
  * Leave @Application contex@ : "/" 
 2. Install MySQL and MySQL Workbench
-3. Create a schema and all the necessary tables by using the script from resources/init_db.sql in MySQL Workbench
-4. In the /util/ConnectionUtil.java class change the DB_URL, MYSQL_DRIVER_URL, USERNAME (root) and PASSWORD (1111) properties to the ones you specified when installing MySQL:
+3. Then in MySQL Workbench create and open new connection with your credentials or use the existing one, open src/main/resources/init_db.sql, File->Open SQL script and execute this script Query->Execute.
+4. In the /util/ConnectionUtil.java class change the USERNAME (root) and PASSWORD (1111) properties to the ones you specified when installing MySQL:
 ( dbProperties.put ("user", "root");
 dbProperties.put ("password", "1111"); )
 5. After starting the project, click on "Create a new Driver" to add the first driver.
